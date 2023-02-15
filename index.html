@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Employee crud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div id="employee-info"> 
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label>
+                                Employee id
+                            </label>
+                            <input type="number" name="id" id="id" required>
+                            <p id="warning-message" style="display:none; padding: 0%; margin: 0%;">Id already exist!
+                                Please enter another Id</p>
+                        </div>
+
+                        <div>
+                            <label>
+                                Employee name
+                            </label>
+                            <input type="text" name="name" id="name" required>
+                            <div id="warning-name" style="display:none; padding: 0%; margin: 0%;">Invalid Name!
+                                Please enter name with characters only</div>
+                        </div>
+
+                        <div>
+                            <label>
+                                Employee age
+                            </label>
+                            <input type="number" name="age" id="age" required>
+                            <div id="warning-age" style="display:none; padding: 0%; margin: 0%;">Invalid Age!
+                                Please enter age between 19 and 60</div>
+                            </p>
+
+                            <div>
+                                <label>
+                                    Employee gender
+                                </label>
+                                <select id="gender" required>
+                                    <option disabled> ---Choose gender--- </option>
+                                    <option> Male </option>
+                                    <option> Female </option>
+                                    <option> Others </option>
+                                </select>
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="add">
+                                <input type="button" onclick="update()" value="update">
+
+
+                            </div>
+                    </form>
+                    <!-- <div class="form-action-buttons">
+                        <input type="submit" onclick="onFormSubmit()" value="add">
+                        <input type="submit" onclick="update()" value="update">
+
+
+                    </div> -->
+
+                </div>
+            </td>
+            <td>
+                <table class="list" id="employeelist">
+                    <thread>
+                        <tr>
+                            <th>Emp id</th>
+                            <th>Emp name</th>
+                            <th>Emp age</th>
+                            <th>Emp gender</th>
+                            <th></th>
+                        </tr>
+                    </thread>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </td>
+
+        </tr>
+    </table>
+    <div style=" width: 50%;">
+
+    </div>
+    <script type="text/javascript" src="script.js">
+        // function validate(userName){
+        //     console.log(userName)
+        //     var uname=document.getElementById("name");
+        //     console.log(uname,"uname");
+        //     var uage=document.getElementById("age")
+        //     console.log(uage,"uage");
+        //     if (userName!='(/^[A-Za-z]+$/)'){
+        //         alert("please enter characters only")
+        //         return false
+        //     }
+        //         else if(uage<19 && uage>60){
+        //             alert("please enter age between 19 and 60 only")
+        //             return false
+
+        //         }
+
+
+    </script>
+</body>
+
+</html>

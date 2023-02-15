@@ -1,0 +1,70 @@
+.hide{
+    display: none;
+}
+label.validation-error{
+    color:red;
+    margin-left: 5px;
+}
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: aliceblue;
+    margin-right: 4px;
+}
+.form-action-buttons{
+    text-align: right;  
+}
+input[type=submit]{
+    width: 30%;
+    background-color: beige;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=text],input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+tr:nth-child(even),table.list thread>tr{
+    background-color: #dddddd;
+}
+td,th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+body>table{
+    width: 80%;
+}
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width: 100%;
+}
+.add-employee{
+     color: #000;
+}
+#warning-message{
+    font-size: 12px;
+    color: red;
+    
+}
+#warning-name{
+    font-size: 12px;
+    color: red;
+    
+}
+#warning-age{
+    font-size: 12px;
+    color: red;
+    
+}
